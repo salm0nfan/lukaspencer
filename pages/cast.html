@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>LUKASPENCER</title>
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+<script>
+  fetch('./components/nav.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('navbar-placeholder').innerHTML = data;
+    });
+</script>
+</body>
+</html>
